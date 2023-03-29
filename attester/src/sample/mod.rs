@@ -24,6 +24,7 @@ struct SampleQuote {
 #[derive(Debug, Default)]
 pub struct SampleAttester {}
 
+/*
 impl Attester for SampleAttester {
     fn get_evidence(&self, report_data: String) -> Result<String> {
         let evidence = SampleQuote {
@@ -34,3 +35,4 @@ impl Attester for SampleAttester {
         serde_json::to_string(&evidence).map_err(|_| anyhow!("Serialize sample evidence failed"))
     }
 }
+*/
